@@ -367,17 +367,16 @@ export default class NightscoutExtension extends Extension {
             this._indicator = new NightscoutIndicator(this._settings, this);
             const position = this._settings.get_string('icon-position');
             
-            // Use -1 for right position to ensure consistent placement
             if (position === 'left') {
-                Main.panel.addToStatusArea('nightscout-indicator', this._indicator, 0, 'left');
+                Main.panel.addToStatusArea('nightscout-indicator', this._indicator, 1, 'left');
             } else {
-                Main.panel.addToStatusArea('nightscout-indicator', this._indicator, -1, 'right');
+                Main.panel.addToStatusArea('nightscout-indicator', this._indicator, 0, 'right');
             }
         } catch (error) {
             logError('Error enabling extension:', error);
         }
     }
-
+    
     disable() {
         try {
             if (this._indicator) {
