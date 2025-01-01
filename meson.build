@@ -14,7 +14,7 @@ install_data([
   'metadata.json',
 ], install_dir: extension_dir)
 
-install_data('org.gnome.shell.extensions.nightscout.gschema.xml',
+install_data('schemas/org.gnome.shell.extensions.nightscout.gschema.xml',
   install_dir: schema_dir
 )
 
