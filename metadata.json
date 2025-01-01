@@ -11,7 +11,7 @@
     "donations": {
         "github": "https://github.com/faymaz"
     },
-    "icon": "icons/icon.svg",
+    "icon": "icons/icon.png",
     "categories": ["system-monitor", "status-indicators"],
     "build-system": "meson",
     "License": "GPL-3.0"   

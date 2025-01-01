@@ -28,17 +28,32 @@ A GNOME Shell extension that displays real-time blood glucose levels from Nights
 
 ## Installation
 
+### From GNOME Extensions Website
 1. Visit [GNOME Extensions](https://extensions.gnome.org) and search for "Nightscout CGM Monitor"
 2. Click "Install" to add the extension to your system
 3. Enable the extension using the toggle switch
 
-Alternatively, install manually:
+### Manual Installation
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/faymaz/nightscout
+   ```
+2. Copy to GNOME extensions directory:
+   ```bash
+   cp -r nightscout ~/.local/share/gnome-shell/extensions/nightscout@faymaz
+   ```
+3. Restart GNOME Shell:
+   - Press Alt+F2
+   - Type 'r'
+   - Press Enter
+   - For Wayland sessions, you need to log out and log back in.
+4. Enable the extension using GNOME Extensions app or over CMD Line
+   - Use a tool like `gnome-extensions-app` or `gnome-tweaks` to enable the "Nightscout CGM Monitor" extension.
+   - Alternatively, you can enable it via the command line:
 
-```bash
-git clone https://github.com/faymaz/nightscout
-cd nightscout
-make install
-```
+     ```bash
+     gnome-extensions enable nightscout@faymaz
+     ``` 
 
 ## Configuration
 
@@ -70,16 +85,6 @@ Built using GNOME Shell extension technologies:
 - GJS (GNOME JavaScript)
 - GTK4 and Libadwaita
 - GNOME Shell APIs
-
-### Building from Source
-
-```bash
-git clone https://github.com/faymaz/nightscout
-cd nightscout
-meson setup builddir
-ninja -C builddir
-ninja -C builddir install
-```
 
 ### Contributing
 
