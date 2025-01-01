@@ -4,8 +4,8 @@
 A GNOME Shell extension that displays real-time blood glucose levels from Nightscout in your system panel. Monitor your CGM data directly from your desktop with customizable alerts and visual indicators.
 
 ![NS1](img/NS1.png)
-![NS3](img/NS3.png)
-![NS4](img/NS4.png)
+
+![NS3](img/NS3.png) ![NS4](img/NS4.png)
 
 ## Features
 
@@ -100,5 +100,5 @@ GPL-3.0 - see [LICENSE](LICENSE) for details
 
 ## Credits
 
-- Icon design: [Phosphor Icons](https://phosphoricons.com)
+- Icon: Official Nightscout Logo
 - Inspired by [CGM in the Cloud](http://nightscout.github.io/)
